@@ -1,0 +1,298 @@
+<!Doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+header{
+background-color:white;
+padding-left:20px;
+padding-top:5px;
+box-shadow:0px 0px 2px 2px;
+position:sticky;
+top:0;
+z-index:999;
+height:60px;
+}
+ul{
+display:inline-flex;
+float:right;
+list-style-type:none;
+}
+ul li{
+padding:20px;
+font-size:20px;
+padding-top:15px;
+}
+ul li a:visited{
+color:black;
+}
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color:white;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+background-color:black;
+}
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size:20px;
+color:white;
+display: block;
+transition: 0s;
+}
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size:20px;
+margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+.img{
+display:inline-flex;
+padding-left:45%;
+padding-top:10px;
+font-size:30px;
+}
+.img a{
+text-decoration:none;
+}
+.img a:visited{
+color:black;
+}
+footer{
+background:black;
+height: auto;
+width: 100vw;
+padding-top: 40px;
+}
+.footer-content{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+.footer-content p{
+max-width: 500px;
+margin: 10px auto;
+line-height: 28px;
+font-size:12px;
+color:white;
+}
+.social{
+display:inline-flex;
+float:right;
+list-style-type:none;
+}
+.social li{
+padding:20px;
+font-size:20px;
+padding-top:15px;
+}
+.social li a:visited{
+color:white;
+}
+.but{
+margin:5%;
+}
+.main{
+display: flex;
+flex-wrap: wrap;
+margin-top:50px     
+}
+.card{
+margin:10px;
+margin-left:80px;
+border:2px solid black; 
+border-radius:30px;
+height:600px;
+width:400px;
+padding:20px;
+}
+.card:hover {
+box-shadow: rgba(0, 0, 0, 0.5) 20px 20px 30px 20px;
+transform: scale(1.0);
+} 
+</style>
+</head>
+<body>
+<header>
+   <ul>
+      <li style="color:black"><a href="user.html"><i class="fa-solid fa-user"></i></a></li>
+         </ul>
+<div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="index.html">Home</a>
+   <a href="women.html">Women</a>
+   <a href="men.html">Men</a>
+   <a href="kids.html">Kids</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<div class="img"><i><a href="#">Cara</a></i></div>
+
+<script>
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</header>
+<h1 style="color:black"><center>Best Collections</center></h1>
+  <h6 style="color:black"><center>For Kids</center></h6>
+<br/><br/>
+<div class="container-fluid">
+<img src="https://i.pinimg.com/originals/46/1b/17/461b1719626c2e4a9d83687cb080cc64.jpg"
+width="100%">
+</div>
+<br/><br/>
+
+<div class="form">
+    <form>
+  <center><label>Minimum : </label>
+         <input type="number" id="min"/>
+     <label>Maximum : </label>
+         <input type="number" id="max"/>
+        <input type="button" class="submit btn btn-success" value="Filter"/></center>
+    </form>
+</div>
+    <div class="main" >
+       <div class="card" data-value="600">
+          <img src="https://i.pinimg.com/564x/00/e6/9f/00e69f671c045bc142bb54436d81fbac.jpg" height="450px" width="350px" style="border-radius:30px;"/>
+          <h3 style="text-align: center;">Mimo</h3>
+           <center><p><b>$ 600</b></p></center>
+            </div>
+
+       <div class="card" data-value="800">
+         <img src="https://i.pinimg.com/564x/47/0d/95/470d955bc6e1588521a7c77975cc2d88.jpg" height="450px" width="350px" style="border-radius:30px;"/>
+         <h3 style="text-align: center;">Mimo</h3>
+           <center><p><b>$ 800</b></p></center>
+             </div>
+
+       <div class="card" data-value="650">
+         <img src="https://i.pinimg.com/564x/88/24/5b/88245b3a9afd9e0ee6202fe626f7392b.jpg "
+height="450px" width="350px" style="border-radius:30px;"/>
+         <h3 style="text-align: center;">Mimo</h3>
+           <center><p><b>$ 650</b></p></center>
+            </div>
+
+         <div class="card" data-value="700">
+           <img src="https://i.pinimg.com/564x/96/0a/61/960a6160a9887bf3c9a7993ded9a1ee9.jpg" height="450px" width="350px" style="border-radius:30px;"/>
+         <h3 style="text-align: center;">Mimo</h3>
+            <center><p><b>$ 700</b></p></center>
+            </div>
+
+          <div class="card" data-value="550">
+            <img src="https://i.pinimg.com/564x/22/be/57/22be57524e88e0e705d4884d40ee646c.jpg" height="450px" width="350px" style="border-radius:30px;"/>
+         <h3 style="text-align: center;">Mimo</h3>
+             <center><p><b>$ 550</b></p></center>
+                    </div>
+
+           <div class="card" data-value="350">
+             <img src="https://i.pinimg.com/564x/03/9c/fe/039cfee135645fef1bd935d962de2d20.jpg" height="450px" width="350px" style="border-radius:30px;"/>
+         <h3 style="text-align: center;">Mimo</h3>
+             <center><p><b>$ 350</b></p></center>
+                 </div>
+
+           <div class="card" data-value="400">
+             <img src="https://i.pinimg.com/564x/33/de/fd/33defd998967c216892fbeb234f21a64.jpg" height="450px" width="350px" style="border-radius:30px;"/>
+         <h3 style="text-align: center;">Mimo</h3>
+            <center><p><b>$ 400</b></p></center>
+                     </div>
+
+            <div class="card" data-value="500">
+              <img src="https://i.pinimg.com/564x/0d/81/1a/0d811a09952177b3861871ddb4190fd3.jpg" height="450px" width="350px" style="border-radius:30px;"/>
+         <h3 style="text-align: center;">Mimo</h3>
+             <center><p><b>$ 500</b></p></center>
+                  </div>
+        
+ <div class="card" data-value="300">
+              <img src="https://i.pinimg.com/564x/3a/c7/00/3ac700e3918fc9ba98e5a02a8ad582c0.jpg" height="450px" width="350px" style="border-radius:30px;"/>
+         <h3 style="text-align: center;">Mimo</h3>
+             <center><p><b>$ 300</b></p></center>
+                  </div>
+
+ <div class="card" data-value="200">
+              <img src="https://i.pinimg.com/564x/83/7d/49/837d49a232d4fdae7897893153a3d5c5.jpg" height="450px" width="350px" style="border-radius:30px;"/>
+         <h3 style="text-align: center;">Mimo</h3>
+             <center><p><b>$ 200</b></p></center>
+                  </div>
+
+ <div class="card" data-value="600">
+              <img src="https://i.pinimg.com/564x/fc/c6/57/fcc6579ef8490df930365f9f7e42c205.jpg" height="450px" width="350px" style="border-radius:30px;"/>
+         <h3 style="text-align: center;">Mimo</h3>
+             <center><p><b>$ 600</b></p></center>
+                  </div>
+
+ <div class="card" data-value="800">
+              <img src="https://i.pinimg.com/564x/58/6a/7b/586a7b7e32e311e89de788684fb616c0.jpg" height="450px" width="350px" style="border-radius:30px;"/>
+         <h3 style="text-align: center;">Mimo</h3>
+             <center><p><b>$ 800</b></p></center>
+                  </div>
+        </div>    
+</div>
+<script>
+        subBtn=document.querySelector('.submit');
+
+        let datavalue=document.querySelectorAll('.card');
+        datavalue.forEach(function(item){
+            subBtn.addEventListener('click',function(){
+
+                let min=document.getElementById("min").value;
+                let max=document.getElementById("max").value;
+
+                minvalue= parseInt(min);
+                maxvalue= parseInt(max);
+
+               let dataItems = item.getAttribute('data-value');
+               if( dataItems >= minvalue && dataItems <=maxvalue){
+                item.style.display="block";
+               }
+               else{
+                item.style.display="none";
+               }
+
+            })
+        })
+    </script>
+
+<div class="but">
+  <img src="https://i.pinimg.com/originals/f2/81/27/f2812757b32fdab8522b6299d5bd90a1.jpg" width="100%" height="600px">
+</div>
+	
+</body>
+<footer>
+        <div class="footer-content">            
+            <ul class="social">
+                <li style="color:white"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li style="color:white"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li style="color:white"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li style="color:white"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li style="color:white"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+            </ul>
+<p>Cara's business concept is to offer fashion and quality at the best price in a sustainable way.Cara has since it was founded in 1947 grown into one of the world's leading fashion companies.The content of this site is copyright-protected and is the property of Cara. </p>
+<p><b>CARA.com</b></p>
+
+        </div>
+
+    </footer>
+
+
+</html>

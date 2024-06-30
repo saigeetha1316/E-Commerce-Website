@@ -1,0 +1,305 @@
+<!Doctype html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<title>CARA.com</title>
+<style>
+header{
+background-color:white;
+padding-left:20px;
+padding-top:5px;
+box-shadow:0px 0px 2px 2px;
+position:sticky;
+top:0;
+z-index:999;
+height:60px;
+}
+ul{
+display:inline-flex;
+float:right;
+list-style-type:none;
+}
+ul li{
+padding:20px;
+font-size:20px;
+padding-top:15px;
+}
+ul li a:visited{
+color:black;
+}
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color:white;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top:50px;
+background-color:black;
+}
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size:20px;
+color:white;
+display: block;
+transition: 0s;
+}
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size:20px;
+margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 10px;}
+.sidenav a {font-size: 18px;}
+}
+.img{
+display:inline-flex;
+padding-left:45%;
+padding-top:10px;
+font-size:30px;
+}
+footer{
+background:black;
+height: auto;
+width: 100vw;
+padding-top: 40px;
+}
+.footer-content{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+.footer-content p{
+max-width: 500px;
+margin: 10px auto;
+line-height: 28px;
+font-size:12px;
+color:white;
+}
+.social{
+display:inline-flex;
+float:right;
+list-style-type:none;
+}
+.social li{
+padding:20px;
+font-size:20px;
+padding-top:15px;
+}
+.social li a:visited{
+color:white;
+}
+.mark{
+background-color:black;
+color:white;
+margin:5px;
+}
+.img a{
+text-decoration:none;
+}
+.img a:visited{
+color:black;
+}
+#maindiv{
+background-color:black;
+color:white;
+overflow: hidden;
+white-space: nowrap;
+width:100%;
+}
+#div1 {
+display: inline-block;
+animation: marquee 30s linear infinite;
+width:100%;
+}
+#div2 {
+display: inline-block;
+animation: marquee2 30s linear infinite;
+animation-delay:10s;
+width:100%;
+}
+@keyframes marquee {
+ from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marquee2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+.button{
+border:0;
+border-radius: 40px;
+font-size: 13pt;
+padding:5px 15px;
+background-color: black;
+color: white;
+}
+.button a{
+text-decoration:none;
+color:white;
+}
+.but{
+margin:5%;
+}
+.container-fluid{
+padding-top:2%;
+}
+.container{
+display:inline-flex;
+padding-left:150px;
+} 
+.one{
+position:relative;
+padding:60px;
+}
+.text{
+position:absolute;
+top:75%;
+left:30%;
+}
+.two{
+position:relative;
+padding:60px;
+}
+.three{
+position:relative;
+padding:60px;
+}
+</style>
+</head>
+<body>
+<header>
+   <ul>
+      <li style="color:black"><a href="user.html"><i class="fa-solid fa-user"></i></a></li>
+   </ul>
+<div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="index.html">Home</a>
+   <a href="women.html">Women</a>
+   <a href="men.html">Men</a>
+   <a href="kids.html">Kids</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<div class="img"><center><i><a href="#">Cara</a></i></center></div>
+
+<script>
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</header>
+<div class="container-fluid">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://i.pinimg.com/originals/20/f4/b8/20f4b823acdd3a7ef4062358a3ad9672.jpg" width="100%">
+      </div>
+     <div class="item">
+        <img src="https://i.pinimg.com/originals/4b/3c/43/4b3c4379e168b2643690ba2bd4c6e5af.jpg" width="100%">
+      </div>
+     <div class="item">
+        <img src="https://i.pinimg.com/originals/8e/a7/33/8ea733161d20e194036709e1defd9e84.png" width="100%">
+      </div>
+<div class="item">
+        <img src="https://i.pinimg.com/originals/cc/cd/15/cccd15e542d6e374ee2fe6e10089776a.jpg" width="100%">
+      </div>
+<div class="item">
+        <img src="https://i.pinimg.com/originals/dc/66/47/dc6647968162968894cca878e5979769.jpg" width="100%">
+      </div>
+    </div>
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left"></span>
+  <span class="sr-only">Previous</span>
+</a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+     <span class="glyphicon glyphicon-chevron-right"></span>
+     <span class="sr-only">Next</span>
+   </a>
+  </div>
+</div>
+<br/><br/>
+<div  class="mark"  id="maindiv">
+  <div id="div1">
+    &nbsp; H&M &emsp;&emsp;&emsp;   Gucci  &emsp;&emsp;&emsp;  Zara &emsp;&emsp;&emsp;   Levis &emsp;&emsp;&emsp;   Chanel &emsp;&emsp;&emsp;  Dior &emsp;&emsp;&emsp;  Louis Vuitton </div>
+  <div id="div2">
+    &nbsp; H&M &emsp;&emsp;&emsp;   Gucci  &emsp;&emsp;&emsp;  Zara &emsp;&emsp;&emsp;   Levis &emsp;&emsp;&emsp;   Chanel &emsp;&emsp;&emsp;  Dior &emsp;&emsp;&emsp;  Louis Vuitton </div>
+  </div>
+</div>
+<br/><br/>
+<center><b><h1 style="color:black">We Love Trends</h1></b></center>
+<center><i style="color:black">Summer Collection New Modern Design</i></center>
+<div class="container">
+  <div class="one">
+    <img src="https://i.pinimg.com/originals/05/c4/00/05c400edebce979ecf485555c7288ef6.jpg"width="300px" height="400px">
+<div class="text">
+  <button class="button btn btn-dark"><a href="women.html">Womens Collection</a></button>
+</div>
+</div>
+<div class="two">
+    <img src="https://i.pinimg.com/564x/fd/64/8a/fd648ab62d84f121613da4f607408157.jpg" width="300px" height="400px">
+<div class="text">
+  <button class="button btn btn-dark"><a href="men.html">Mens Collection</a></button>
+</div>
+</div>
+<div class="three">
+    <img src="https://i.pinimg.com/564x/e4/a5/57/e4a55762d9d629f9f4fbda2204caf971.jpg" width="300px" height="400px">
+<div class="text">
+  <button class="button btn btn-dark"><a href="kids.html">Kids Collection</a></button>
+</div>
+ </div>
+</div>
+        
+<div class="but">
+  <img src="https://i.pinimg.com/originals/c3/e8/15/c3e8157d04ba325bcdac813aca9c0597.png" width="100%" height="600px">
+</div>
+</body>
+
+<footer>
+        <div class="footer-content">            
+            <ul class="social">
+                <li style="color:white"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li style="color:white"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li style="color:white"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li style="color:white"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li style="color:white"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+            </ul>
+<p>Cara's business concept is to offer fashion and quality at the best price in a sustainable way.Cara has since it was founded in 1947 grown into one of the world's leading fashion companies.The content of this site is copyright-protected and is the property of Cara. </p>
+<p><b>CARA.com</b></p>
+
+        </div>
+
+    </footer>
+
+</html>
